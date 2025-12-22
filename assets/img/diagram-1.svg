@@ -28,13 +28,44 @@
         fill-rule: evenodd;
         stroke-miterlimit: 10;
       }
+
+rect#romb30,
+rect#romb20,
+rect#romb10 {
+  animation: pulse-circle 5s infinite linear;
+}
+rect#romb60{animation: pulse-romb60 15s infinite linear;transform-origin: -13% 44%;}
+rect#romb30{animation: pulse-romb30 8s infinite linear;transform-origin: 3% 62%;}
+rect#romb20{animation: pulse-romb20 11s infinite linear;transform-origin: -15% 78%;}
+rect#romb10{animation: pulse-romb10 6s infinite linear;transform-origin: -4% 82%;}
+
+@keyframes pulse-romb60 {
+    0% {transform: rotate(-45deg) scale(0.95) translate(-67.04px, 107.58px);}
+    50% {transform: rotate(-45deg) scale(1) translate(-67.04px, 107.58px);}
+    100% {transform: rotate(-45deg) scale(0.95) translate(-67.04px, 107.58px);}
+}
+@keyframes pulse-romb30 {
+    0% {transform: rotate(-45deg) scale(0.95) translate(9.69px, 155.93px);}
+    50% {transform: rotate(-45deg) scale(1) translate(9.69px, 155.93px);}
+    100% {transform: rotate(-45deg) scale(0.95) translate(9.69px, 155.93px);}
+}
+@keyframes pulse-romb20 {
+    0% {transform: rotate(-45deg) scale(0.95) translate(-74.28px, 189.95px);}
+    50% {transform: rotate(-45deg) scale(1) translate(-74.28px, 189.95px);}
+    100% {transform: rotate(-45deg) scale(0.95) translate(-74.28px, 189.95px);}
+}
+@keyframes pulse-romb10 {
+    0% {transform: rotate(-45deg) scale(0.95) translate(-26.5px, 204.37px);}
+    50% {transform: rotate(-45deg) scale(1) translate(-26.5px, 204.37px);}
+    100% {transform: rotate(-45deg) scale(0.95) translate(-26.5px, 204.37px);}
+}
     </style>
   </defs>
   <g>
-    <rect id="romb60" class="cls-1" x="31.47" y="69.84" width="129.76" height="129.76" rx="17.47" ry="17.47" transform="translate(-67.04 107.58) rotate(-45)"/>
-    <rect id="romb30" class="cls-3" x="147.65" y="20.86" width="90.83" height="90.83" rx="12.23" ry="12.23" transform="translate(9.69 155.93) rotate(-45)"/>
-    <rect id="romb20" class="cls-3" x="159.71" y="152.2" width="64.88" height="64.88" rx="8.74" ry="8.74" transform="translate(-74.28 189.95) rotate(-45)"/>
-    <rect id="romb10" class="cls-1" x="209.12" y="109.84" width="48.66" height="48.66" rx="6.55" ry="6.55" transform="translate(-26.5 204.37) rotate(-45)"/>
+    <rect id="romb60" class="cls-1" x="31.47" y="69.84" width="129.76" height="129.76" rx="17.47" ry="17.47"/>
+    <rect id="romb30" class="cls-3" x="147.65" y="20.86" width="90.83" height="90.83" rx="12.23" ry="12.23"/>
+    <rect id="romb20" class="cls-3" x="159.71" y="152.2" width="64.88" height="64.88" rx="8.74" ry="8.74"/>
+    <rect id="romb10" class="cls-1" x="209.12" y="109.84" width="48.66" height="48.66" rx="6.55" ry="6.55"/>
   </g>
   <g id="arrows">
     <g>
